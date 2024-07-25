@@ -1,9 +1,19 @@
-spring.application.name=order-service
+#
+#spring:
+#  cloud:
+#    loadbalancer:
+#      instances:
+#        product-service:
+#          - uri: http://localhost:8081
+#          - uri: http://localhost:8085
 
-spring:
-  cloud:
-    loadbalancer:
-      instances:
-        product-service:
-          - uri: http://localhost:8081
-          - uri: http://localhost:8082
+
+
+
+            spring:
+              cloud:
+                loadbalancer:
+                  clients:
+                    product-service:
+                      instances:
+                        - uri: http://localhost:8085

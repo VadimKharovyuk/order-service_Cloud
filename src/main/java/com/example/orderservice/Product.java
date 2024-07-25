@@ -1,2 +1,16 @@
-package com.example.orderservice;public class Product {
+package com.example.orderservice;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class Product {
+    private Long id;
+    private String name;
+    private double price;
 }
